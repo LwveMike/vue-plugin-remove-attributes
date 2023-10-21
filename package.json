@@ -63,11 +63,15 @@
     "vite": "^4.4.11",
     "vitest": "^0.34.6"
   },
+  "peerDependencies": {
+    "vue": "3.x",
+    "@vue/compiler-core": "3.x"
+  },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix",
-    "**/*.ts": "tsc --noEmit"
+    "**/*.{js,ts,vue}": "eslint --fix",
+    "src/*.ts": "tsc --noEmit"
   }
 }
