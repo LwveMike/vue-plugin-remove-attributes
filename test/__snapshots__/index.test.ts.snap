@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`createAttributesRemover > empty attributes > should not change anything 1`] = `
+"import { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \\"vue\\"
+
+const _hoisted_1 = /*#__PURE__*/_createElementVNode(\\"div\\", null, [
+  /*#__PURE__*/_createElementVNode(\\"header\\", { \\"data-test\\": \\"header-test\\" }, \\" Header \\"),
+  /*#__PURE__*/_createElementVNode(\\"section\\", { \\"data-test\\": 'section-content' }, [
+    /*#__PURE__*/_createElementVNode(\\"ul\\", null, [
+      /*#__PURE__*/_createElementVNode(\\"li\\", {
+        \\"data-test\\": 'item-text',
+        textContent: 'text'
+      })
+    ]),
+    /*#__PURE__*/_createElementVNode(\\"div\\", { \\"data-meta\\": \\"not-secure-meta\\" }, \\" Meta \\")
+  ]),
+  /*#__PURE__*/_createElementVNode(\\"footer\\", { dataTest: \\"footer-test\\" }, \\" Footer \\")
+], -1 /* HOISTED */)
+const _hoisted_2 = [
+  _hoisted_1
+]
+
+export function render(_ctx, _cache) {
+  return (_openBlock(), _createElementBlock(\\"template\\", null, _hoisted_2))
+}"
+`;
+
+exports[`createAttributesRemover > with attributes > should remove all data-test and data-meta 1`] = `
+"import { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \\"vue\\"
+
+const _hoisted_1 = /*#__PURE__*/_createElementVNode(\\"div\\", null, [
+  /*#__PURE__*/_createElementVNode(\\"header\\", null, \\" Header \\"),
+  /*#__PURE__*/_createElementVNode(\\"section\\", null, [
+    /*#__PURE__*/_createElementVNode(\\"ul\\", null, [
+      /*#__PURE__*/_createElementVNode(\\"li\\", { textContent: 'text' })
+    ]),
+    /*#__PURE__*/_createElementVNode(\\"div\\", null, \\" Meta \\")
+  ]),
+  /*#__PURE__*/_createElementVNode(\\"footer\\", { dataTest: \\"footer-test\\" }, \\" Footer \\")
+], -1 /* HOISTED */)
+const _hoisted_2 = [
+  _hoisted_1
+]
+
+export function render(_ctx, _cache) {
+  return (_openBlock(), _createElementBlock(\\"template\\", null, _hoisted_2))
+}"
+`;

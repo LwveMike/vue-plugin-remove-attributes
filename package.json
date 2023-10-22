@@ -54,6 +54,7 @@
     "bumpp": "^9.2.0",
     "eslint": "^8.51.0",
     "esno": "^0.17.0",
+    "happy-dom": "^12.9.1",
     "lint-staged": "^14.0.1",
     "pnpm": "^8.8.0",
     "rimraf": "^5.0.5",
@@ -64,8 +65,11 @@
     "vitest": "^0.34.6"
   },
   "peerDependencies": {
-    "vue": "3.x",
-    "@vue/compiler-core": "3.x"
+    "@vue/compiler-core": "3.x",
+    "vue": "3.x"
+  },
+  "optionalDependencies": {
+    "@vue/compiler-sfc": "^3.3.6"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
