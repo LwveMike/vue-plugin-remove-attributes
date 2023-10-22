@@ -1,7 +1,7 @@
 {
   "name": "vue-plugin-remove-attributes",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "packageManager": "pnpm@8.9.2",
   "description": "Vue plugin that removes attributes and directives from AST",
   "author": "Mihai Plamadeala <plamadeala.mihai002@gmail.com>",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/lwvemike/vue-plugin-remove-attributes.git"
   },
   "bugs": "https://github.com/lwvemike/vue-plugin-remove-attributes/issues",
-  "keywords": [],
+  "keywords": ["vue", "vite", "vue-plugin", "vite-plugin", "data-test", "remove-attributes"],
   "sideEffects": false,
   "exports": {
     ".": {
