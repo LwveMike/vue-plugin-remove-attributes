@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@8.9.2",
-  "description": "TODO(lwvemike) change before release",
+  "description": "Vue plugin that removes attributes and directives from AST",
   "author": "Mihai Plamadeala <plamadeala.mihai002@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/lwvemike/vue-plugin-remove-attributes#readme",
