@@ -46,6 +46,13 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
+  "peerDependencies": {
+    "@vue/compiler-core": "3.x",
+    "vue": "3.x"
+  },
+  "optionalDependencies": {
+    "@vue/compiler-sfc": "^3.3.6"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^1.0.0-beta.22",
     "@antfu/ni": "^0.21.8",
@@ -63,13 +70,6 @@
     "unbuild": "^2.0.0",
     "vite": "^4.4.11",
     "vitest": "^0.34.6"
-  },
-  "peerDependencies": {
-    "@vue/compiler-core": "3.x",
-    "vue": "3.x"
-  },
-  "optionalDependencies": {
-    "@vue/compiler-sfc": "^3.3.6"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
