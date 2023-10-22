@@ -1,7 +1,7 @@
 {
   "name": "vue-plugin-remove-attributes",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "packageManager": "pnpm@8.9.2",
   "description": "Vue plugin that removes attributes and directives from AST",
   "author": "Mihai Plamadeala <plamadeala.mihai002@gmail.com>",
@@ -50,14 +50,12 @@
     "@vue/compiler-core": "3.x",
     "vue": "3.x"
   },
-  "optionalDependencies": {
-    "@vue/compiler-sfc": "^3.3.6"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^1.0.0-beta.22",
     "@antfu/ni": "^0.21.8",
     "@antfu/utils": "^0.7.6",
     "@types/node": "^20.8.3",
+    "@vue/compiler-sfc": "^3.3.6",
     "bumpp": "^9.2.0",
     "eslint": "^8.51.0",
     "esno": "^0.17.0",

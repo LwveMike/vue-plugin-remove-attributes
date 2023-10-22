@@ -14,10 +14,6 @@ importers:
       vue:
         specifier: 3.x
         version: 3.3.6(typescript@5.2.2)
-    optionalDependencies:
-      '@vue/compiler-sfc':
-        specifier: ^3.3.6
-        version: 3.3.6
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^1.0.0-beta.22
@@ -31,6 +27,9 @@ importers:
       '@types/node':
         specifier: ^20.8.3
         version: 20.8.3
+      '@vue/compiler-sfc':
+        specifier: ^3.3.6
+        version: 3.3.6
       bumpp:
         specifier: ^9.2.0
         version: 9.2.0
